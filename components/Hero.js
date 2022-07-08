@@ -54,6 +54,7 @@ export default function Hero() {
   return (
     <>
         <Head>
+            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
             <link rel="shortcut icon" href="/images/favicon.ico"/>
             <script src="https://cdn.tailwindcss.com"></script>
             <script src="https://kit.fontawesome.com/448126ce4f.js" crossOrigin="anonymous"></script>
