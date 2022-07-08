@@ -41,7 +41,7 @@ const Home = ({foods})=> {
     );
 }
 export async function getStaticProps() {
-    const res = await fetch("http://127.0.0.1:8000/api/food-list/");
+    const res = await fetch("https://pf-cognitive-backend.herokuapp.com/food-list/");
     const foods = await res.json();
     
     return {
