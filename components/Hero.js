@@ -26,7 +26,7 @@ export default function Hero() {
     const ReactS3Client = new S3(config);
     ReactS3Client
     .uploadFile(file, file.name)
-    .then(data => fetch('http://127.0.0.1:8000/api/food-create/', {
+    .then(data => fetch('https://pf-cognitive-backend.herokuapp.com/api/food-create/', {
       method : 'POST',
       headers: {"Content-Type" : "application/json"},
       body: JSON.stringify({image_url:data.location,nombre:"a",informacion_nutricional:"b"}),
