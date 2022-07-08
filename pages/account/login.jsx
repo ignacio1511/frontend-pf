@@ -35,6 +35,7 @@ function Login() {
 
     return (
         <Layout>
+            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
             <div className="card">
                 <h4 className="card-header">Login</h4>
                 <div className="card-body">
