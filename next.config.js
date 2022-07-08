@@ -6,6 +6,6 @@ module.exports = {
     publicRuntimeConfig: {
         apiUrl: process.env.NODE_ENV === 'development'
             ? 'http://localhost:3000/api' // development api
-            : 'http://frontend-pf-cognitive/api' // production api
+            : 'https://frontend-pf.vercel.app/api' // production api
     }
 }
